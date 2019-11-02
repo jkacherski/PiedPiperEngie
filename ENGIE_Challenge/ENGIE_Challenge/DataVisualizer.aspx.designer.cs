@@ -22,6 +22,24 @@ namespace ENGIE_Challenge {
         protected global::System.Web.UI.WebControls.Panel pnlMain;
         
         /// <summary>
+        /// pnlHead control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Panel pnlHead;
+        
+        /// <summary>
+        /// pnlFilters control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Panel pnlFilters;
+        
+        /// <summary>
         /// ddlTheme control.
         /// </summary>
         /// <remarks>
@@ -29,5 +47,14 @@ namespace ENGIE_Challenge {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList ddlTheme;
+        
+        /// <summary>
+        /// pnlChart control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Panel pnlChart;
     }
 }

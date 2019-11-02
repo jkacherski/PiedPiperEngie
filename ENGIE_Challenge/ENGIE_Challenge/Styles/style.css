@@ -1,0 +1,402 @@
+﻿.chart {
+    max-width: 665px;
+    padding: 10px 20px;
+    font-family: "Avenir Next - Bold";
+    background-color: #FFFFFF;
+    cursor: default !important;
+}
+
+    .chart .title {
+        width: 100%;
+        font-weight: bolder;
+        position: relative;
+    }
+
+        .chart .title h1 {
+            text-transform: none;
+            letter-spacing: 0;
+            margin-bottom: 10px;
+            margin-top: 10px;
+        }
+
+        .chart .title::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            background-color: #c8c9c7;
+        }
+
+.donut-chart, .bar-chart, .pie-chart, .line-chart {
+    min-width: 250px;
+    max-width: 350px;
+    position: relative;
+    top: 20px;
+    display: inline-block;
+}
+
+    .bar-chart canvas, .line-chart canvas {
+        height: 275px !important;
+        width: 350px !important;
+    }
+
+.chart-info {
+    display: inline-block;
+    width: 225px;
+    vertical-align: top;
+    padding: 20px 0px 20px 20px;
+    text-align: center;
+    font-family: "Avenir Next - Med";
+}
+
+.chart-label {
+    width: 100%;
+    position: relative;
+    font-size: 14px;
+    text-align: left;
+    margin: 12px 0;
+    padding: 4px;
+    font-family: "Avenir Next - Bold";
+    display: none;
+}
+
+    .chart-label:not(:last-child) {
+        background-color: #DCE7F8;
+    }
+
+    .chart-label:not(:nth-child(2)) {
+        background-color: #FCF0DE;
+    }
+
+    .chart-label::before {
+        content: '';
+        position: absolute;
+        width: 8px;
+        height: 100%;
+        left: 0;
+        top: 0;
+        bottom: 0;
+    }
+
+    .chart-label:not(:last-child)::before {
+        background-color: #558BE9;
+    }
+
+    .chart-label:not(:nth-child(2))::before {
+        background-color: #F1B658;
+    }
+
+    .chart-label .data {
+        font-size: 22px;
+        padding: 0 8px 0 16px;
+    }
+
+.data-label {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.secondary-button {
+    color: #AF272F;
+    border: 2px solid #AF272F;
+    background: none;
+    font-size: 16px;
+    border-radius: 3px;
+    height: 44px;
+    min-width: 80px;
+    padding: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    margin: 0 auto;
+    float: none;
+}
+
+    .secondary-button:focus, .secondary-button:hover {
+        color: #871C22;
+        border-color: #871C22;
+        background-color: rgba(175, 39, 47, 0.1)
+    }
+
+.dropdown-container .dropdown {
+    position: absolute !important;
+}
+
+.dropdown-container .dropdown-menu {
+    width: 100%;
+    background: #fff;
+}
+
+    .dropdown-container .dropdown-menu li {
+        padding: 5px 10px;
+        cursor: pointer;
+    }
+
+        .dropdown-container .dropdown-menu li:hover {
+            background: #af272f;
+            color: #ffffff;
+        }
+
+.legend {
+    width: 145px;
+    display: inline-block;
+    font-family: "Avenir Next - Med";
+    font-weight: bold;
+    font-size: 12px;
+    text-align: center;
+    vertical-align: top;
+    margin-top: 25px;
+}
+
+.legend-wrapper {
+    padding-left: 20px;
+    text-align: left;
+}
+
+    .legend-wrapper::before {
+        content: '';
+        width: 15px;
+        height: 15px;
+        position: absolute;
+        margin-left: -20px;
+        margin-top: 2px;
+        background-color: attr(legend-color);
+    }
+
+.dnnDashboard {
+    max-width: 715px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
+
+.dnnEdit .dnnFormItem .color-link {
+    width: 225px;
+    position: absolute;
+    text-align: right;
+    height: 25px;
+    line-height: 25px;
+}
+
+.drilldown-custom, .drilldown-default {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transform: scale(0.8);
+    transition: 0.5s;
+}
+
+    .drilldown-custom.is-on, .drilldown-default.is-on {
+        opacity: 1;
+        max-height: 100px;
+        overflow: visible;
+        transform: scale(1);
+    }
+
+.empty-label {
+    margin: 15px;
+    float: left;
+    min-height: 275px;
+}
+
+.secondary-button.right {
+    font-family: "Avenir Next - Med" !important;
+    max-height: 20px;
+    margin-right: 10px;
+}
+
+.chart-grid {
+    border: none;
+}
+
+    .chart-grid tr {
+        display: inline-block;
+        margin: 20px 20px 20px 0px;
+    }
+
+        .chart-grid tr a {
+            color: #888888 !important;
+        }
+
+    .chart-grid td {
+        border: 1px solid #CCC;
+        border-radius: 5px;
+        float: left;
+        padding: 10px;
+        cursor: pointer;
+        position: relative;
+    }
+
+.chart-grid-label {
+    padding: 10px 0px 5px 0px;
+    text-align: center;
+}
+
+.mini-chart canvas {
+    height: 120px !important;
+    width: 120px !important;
+}
+
+.chart-selected::after {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 4px;
+    border-radius: 10px;
+    content: '';
+    top: 11px;
+    color: #FFF;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.chart-selected.first::after {
+    content: '1';
+}
+
+.chart-selected.second::after {
+    content: '2';
+}
+
+.chart-selected.third::after {
+    content: '3';
+}
+
+.chart-selected.fourth::after {
+    content: '4';
+}
+
+.chart-selected::before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    background: green;
+    position: absolute;
+    right: 10px;
+    border-radius: 10px;
+}
+
+.chart-info .head {
+    margin-bottom: 20px;
+}
+
+.popclose .secondary-button {
+    border: 2px solid #AF272F;
+    background: none;
+    font-size: 16px;
+    border-radius: 3px;
+    width: 100%;
+    min-width: 80px;
+    padding: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #AF272F;
+    text-decoration: none;
+    text-align: center;
+    height: 44px;
+    max-width: 100px;
+    float: right;
+}
+
+
+.popclose {
+    width: calc(100% - 20px);
+    float: left;
+    padding: 10px;
+}
+
+.theme-list {
+    margin-right: 10px;
+    float: right;
+}
+
+@media (min-width: 1081px) {
+
+    .bar-chart canvas {
+        height: 250px !important;
+        width: 350px !important;
+    }
+}
+
+@media (max-width: 1080px) {
+    .donut-chart, .pie-chart {
+        min-width: 150px;
+        max-width: 150px;
+    }
+
+    .bar-chart canvas {
+        height: 175px !important;
+        width: 250px !important;
+    }
+}
+
+@media (max-width: 992px) {
+    .donut-chart, .bar-chart, .pie-chart {
+        min-width: 250px;
+        max-width: 350px;
+    }
+
+        .bar-chart canvas {
+            height: 275px !important;
+            width: 350px !important;
+        }
+}
+
+@media (max-width: 480px) {
+    .main-container {
+        padding: 45px 40px !important;
+    }
+
+    .dnnDashboard {
+        padding-bottom: 0px;
+    }
+
+    .donut-chart, .pie-chart {
+        min-width: unset;
+        max-width: unset;
+        width: calc(100% - 125px);
+    }
+
+    .chart-info {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .chart {
+        padding: 25px 16px;
+    }
+
+    .chart-info {
+        width: auto;
+        padding: 20px;
+    }
+
+    .legend {
+        width: 100px;
+        font-size: 12px;
+        text-align: left;
+        margin-left: -4px;
+        float: right;
+    }
+
+    .bar-chart {
+        min-width: 250px;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        float: left;
+    }
+
+        .bar-chart canvas {
+            max-height: 400px !important;
+            max-width: 400px !important;
+            height: auto !important;
+            width: auto !important;
+        }
+}
+
+@media (min-width: 1650px) {
+    .chart-cont {
+        height: 500px;
+    }
+}
